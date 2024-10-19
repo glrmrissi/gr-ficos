@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafics interface</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <header class="#">
+        <div class="items_header">
+        </div>
+        <div class="items_header">
+            <h2 style="font-family: 'Franklin Gothic Medium',
+             'Arial Narrow',
+              Arial, sans-serif;
+              ">Gráficos</h2>
+        </div>
+        <div class="items_header anima" id="darkmode">
+
+        </div>
+    </header>
+    <main class="graficos">
+        
+        <section id="grafico-section" class="container_section">
+            <section id="graficos-container" class="graficos-container"></section>
+            <!-- Os lixos vão aqui! -->
+        </section>
+    </main>
+    <footer class="rodape">
+        <img class="rodape__logo" src="img/OIG3-removebg-preview-removebg-preview.png" alt="Logo">
+        <p>&copy; Guilherme Rissi</p>
+    </footer>
+
+    <script type="module" src="graficos/graficos.js"></script>
+    <script type="module" src="graficos/common.js"></script>
+    <script type="module" src="graficos/infoGlobais.js"></script>
+</body>
+</html>

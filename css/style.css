@@ -1,0 +1,135 @@
+:root {
+    --pink: #ff97ff;
+    --pink-pastel: #ffa9ff;
+    --brow: #DAC7A9;
+    --brow-pastel: #F2DBBC;
+    --salmon-pastel: #F5E1D6;
+    --salmon: #E4AB98;
+    --bisque: #F9F2E0;
+    --purple: #965fd4;
+    --purple-two: #734f9a;
+    --green: #3f6d4e;
+    --green-lima: #8bd450;
+    --blue-marine: #1d1a2f;
+    --black: #1d1d1d;
+    --cyan-pastel: #CCD6D6;
+    --vinho: #8A5662;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #1a1a1a;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+header {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background-color: #0000001f;
+    backdrop-filter: saturate(180%) blur(20px);
+    z-index: 100;
+}
+
+a {
+    color: #fff;
+}
+.items_header {
+    margin: 1vh;
+}
+
+.items_header h2:hover {
+    color: #cccccc;
+    transition: ease-in-out .3s;
+}
+
+.container_section {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: #494949;
+    width: 100%;
+    height: 100vh;
+}
+
+.graficos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.graficos-container__texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--secondary-color) solid 2px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6em;
+}
+
+.rodape__logo {
+    margin-top: 10vh;
+    width: 100px;
+    margin-bottom: 2em;
+
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 1em;
+}
+
+.lista__link a{
+    color: #fff;
+    font-size: 12px;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.lista__link a:hover {
+    color: #00ff;
+    transition: .3s;
+}
+
+.lista__link a:active {
+    color: rgb(45, 49, 109);
+}
+
+.rodape__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 1.4em;
+}
