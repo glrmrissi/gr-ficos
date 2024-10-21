@@ -15,7 +15,7 @@ async function quantidadeUsuariosPorRede() {
             marker: {
                 color: 'darkred', // Cor das barras baseada em uma variável CSS
                 line: {
-                    color: getCSS('--secondary-color'), // Borda das barras
+                    color: getCSS('--primary-color'), // Borda das barras
                     width: 1
                 }
             },
@@ -23,8 +23,29 @@ async function quantidadeUsuariosPorRede() {
     ]
 
     const layout = {
-        plot_bgcolor: '#dddddd',
-        paper_bgcolor: '#dddddd'
+        plot_bgcolor: '#1d1a2f',
+        paper_bgcolor: '#fff',
+        yaxis: {
+            title: {
+                text: 'Bilhões de usuários ativos',
+                font: {
+                    color: "darkred"
+                }
+            }
+        },
+        xaxis: {
+            title: {
+                text: 'Nome das rede sociais',
+                font: {
+                    size: 20,
+                    color: "darkred"
+                }
+            }
+        },
+        title: {
+            text: 'Redes sociais com mais usuários'
+            
+        }
 
     }
 

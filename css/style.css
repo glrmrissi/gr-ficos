@@ -28,7 +28,7 @@ body {
     width: 100%;
     height: 100%;
     color: #fff;
-    background-color: #1a1a1a;
+    background-color: var(--blue-marine);
     scroll-behavior: smooth;
     user-select: none;
 }
@@ -64,9 +64,9 @@ a {
     display: flex;
     justify-items: center;
     align-items: center;
-    background-color: #494949;
+    background-color: --blue-marine;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
 }
 
 .graficos-container {
@@ -75,9 +75,24 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
+    margin: 1vh 0 4vh 0;
+}
+
+.graficos-container p{
+    margin: 5vh;
+    font-size: 1.1em;
+    padding: 2vh;
+    border: solid 2px rgb(117, 1, 1);
+}
+.grafico {
+    width: 100%;
+    height: 100vh;
 }
 
 .graficos-container__texto {
+    height: 50vh;
+    background: #000;
     font-size: 1.3rem;
     text-align: center;
     padding: 2rem;
